@@ -1,0 +1,126 @@
+@import 'normalize.css';
+
+@import '@fontsource/nunito-sans/300.css';
+@import '@fontsource/nunito-sans/600.css';
+@import '@fontsource/nunito-sans/800.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+:root {
+  --color1: hsl(200, 15%, 8%);
+  --color2: hsl(0, 0%, 100%);
+  --color3: hsl(0, 0%, 98%);
+  --color4: hsl(209deg 100% 55%);
+  --color5: hsl(207, 100%, 63%);
+  --color6: rgba(149, 157, 165, 1);
+  --color7: rgba(149, 157, 165, 0.9);
+  --color8: rgba(149, 157, 165, 0.8);
+  --color9: rgba(149, 157, 165, 0.7);
+  --color10: rgba(149, 157, 165, 0.6);
+  --color11: rgba(149, 157, 165, 0.5);
+  --color12: rgba(149, 157, 165, 0.4);
+  --color13: rgba(149, 157, 165, 0.3);
+  --color14: rgba(149, 157, 165, 0.2);
+  --color15: rgba(149, 157, 165, 0.1);
+  --color16: hsl(207, 26%, 17%);
+  --color18: hsl(209, 23%, 22%);
+  --color19: #faad14;
+  --color20: #faba38;
+  --color21: #ffe58f;
+  --color22: #fdd53b;
+  --color23: #ff4d4f;
+  --color24: #ff5b5d;
+  --color25: #ffccc7;
+  --color26: #fa796c;
+}
+
+body[data-theme='light'] {
+  --color-warning: var(--color19);
+  --color-warning-hover: var(--color20);
+
+  --color-warning-light: var(--color21);
+  --color-warning-light-hover: var(--color22);
+
+  --color-alert: var(--color23);
+  --color-alert-hover: var(--color24);
+
+  --color-alert-light: var(--color25);
+  --color-alert-light-hover: var(--color26);
+
+  --color-text: var(--color1);
+  --color-text-dark: var(--color1);
+  --color-text-light: var(--color2);
+
+  --color-link: var(--color4);
+  --color-link-hover: var(--color5);
+
+  --color-button: var(--color4);
+  --color-button-hover: var(--color5);
+
+  --color-bg: var(--color3);
+  --color-base: var(--color2);
+  --shadow: var(--color14) 0 0 24px;
+}
+
+body[data-theme='dark'] {
+  --color-warning: var(--color19);
+  --color-warning-hover: var(--color20);
+
+  --color-warning-light: var(--color21);
+  --color-warning-light-hover: var(--color22);
+
+  --color-alert: var(--color23);
+  --color-alert-hover: var(--color24);
+
+  --color-alert-light: var(--color25);
+  --color-alert-light-hover: var(--color26);
+
+  --color-text: var(--color2);
+  --color-text-dark: var(--color1);
+  --color-text-light: var(--color2);
+
+  --color-link: var(--color4);
+  --color-link-hover: var(--color5);
+
+  --color-button: var(--color4);
+  --color-button-hover: var(--color5);
+
+  --color-bg: var(--color16);
+  --color-base: var(--color18);
+  --shadow: var(--color14) 0 0 8px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: var(--color-text);
+  font-weight: 300;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

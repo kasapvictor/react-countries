@@ -8,7 +8,7 @@
       "version": "detect"
     }
   },
-  "ignorePatterns": ["**/*.css", "**/*.scss", "**/*.svg"],
+  "ignorePatterns": ["**/*.css", "**/*.scss", "**/*.svg", "**/*.md"],
   "extends": [
     "plugin:react/recommended",
     "standard",
