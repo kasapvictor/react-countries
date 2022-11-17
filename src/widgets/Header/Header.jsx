@@ -1,15 +1,18 @@
-import { Title } from '@app/shared/ui';
-import { Container } from '@app/shared';
+import { Container, Text } from '@app/shared';
 
 import { ThemeSwitcher } from './ThemeSwitcher';
-import { HeaderInner, HeaderStyled } from './styled';
+import { BrandStyled, HeaderInner, HeaderStyled } from './styled';
 
 export const Header = () => {
   return (
     <HeaderStyled>
       <Container>
         <HeaderInner>
-          <Title>Countries</Title>
+          <BrandStyled href="/">
+            <Text tag="p" variant="medium" size="xlarge">
+              Countries
+            </Text>
+          </BrandStyled>
           <ThemeSwitcher />
         </HeaderInner>
       </Container>

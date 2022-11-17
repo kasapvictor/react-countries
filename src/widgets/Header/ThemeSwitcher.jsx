@@ -1,6 +1,8 @@
-import { Button } from '@app/shared';
-import { ThemeSwitcherStyled } from '@app/widgets/Header/styled';
+import { IoMoon, IoSunny } from 'react-icons/io5';
 
+import { Button } from '@app/shared';
+
+import { ThemeSwitcherStyled } from './styled';
 import { useTheme } from './useTheme';
 import { THEME } from './constants';
 
@@ -9,10 +11,8 @@ export const ThemeSwitcher = () => {
 
   return (
     <ThemeSwitcherStyled>
-      <div>{theme === THEME.LIGHT ? 'icon1' : 'icon2'}</div>
-      <Button variant="alert" onClick={handleTheme}>
-        Theme: {theme}
-      </Button>
+      {theme === THEME.LIGHT ? <IoSunny size={24} /> : <IoMoon size={22} />}
+      <Button onClick={handleTheme}>Theme: {theme}</Button>
     </ThemeSwitcherStyled>
   );
 };
