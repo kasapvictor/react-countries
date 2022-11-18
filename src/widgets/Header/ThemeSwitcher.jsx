@@ -12,7 +12,9 @@ export const ThemeSwitcher = () => {
   return (
     <ThemeSwitcherStyled>
       {theme === THEME.LIGHT ? <IoSunny size={24} /> : <IoMoon size={22} />}
-      <Button onClick={handleTheme}>Theme: {theme}</Button>
+      <Button variant="dark" onClick={handleTheme}>
+        {theme.toUpperCase()}
+      </Button>
     </ThemeSwitcherStyled>
   );
 };

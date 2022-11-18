@@ -48,6 +48,12 @@ html {
   --color24: #ff5b5d;
   --color25: #ffccc7;
   --color26: #fa796c;
+  --color27: #e8e8e8;
+  --color28: #eeeeee;
+  --color29: #dddddd;
+  --color30: #d0d0d0;
+  --color31: hsl(207, 26%, 25%);
+  --color32: hsl(207, 26%, 15%);
 }
 
 body[data-theme='light'] {
@@ -71,10 +77,21 @@ body[data-theme='light'] {
   --color-link-hover: var(--color5);
 
   --color-button: var(--color4);
+  --color-button-text: var(--color2);
   --color-button-hover: var(--color5);
+
+  --color-button-dark: var(--color16);
+  --color-button-dark-hover: var(--color31);
+
+  --color-button-mute: var(--color27);
+  --color-button-mute-hover: var(--color30);
+
+  --color-icon: var(--color16);
+  --color-icon-light: var(--color3);
 
   --color-bg: var(--color3);
   --color-base: var(--color2);
+
   --shadow: var(--color14) 0 0 24px;
 }
 
@@ -92,8 +109,8 @@ body[data-theme='dark'] {
   --color-alert-light-hover: var(--color26);
 
   --color-text: var(--color2);
-  --color-text-dark: var(--color1);
-  --color-text-light: var(--color2);
+  --color-text-dark: var(--color16);
+  --color-text-light: var(--color1);
 
   --color-link: var(--color4);
   --color-link-hover: var(--color5);
@@ -101,8 +118,18 @@ body[data-theme='dark'] {
   --color-button: var(--color4);
   --color-button-hover: var(--color5);
 
+  --color-button-dark: var(--color31);
+  --color-button-dark-hover: var(--color32);
+
+  --color-button-mute: var(--color27);
+  --color-button-mute-hover: var(--color30);
+
+  --color-icon: var(--color3);
+  --color-icon-light: var(--color16);
+
   --color-bg: var(--color16);
   --color-base: var(--color18);
+
   --shadow: var(--color14) 0 0 8px;
 }
 

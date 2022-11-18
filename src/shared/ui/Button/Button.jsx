@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { ButtonStyled } from './styled';
 
-export const Button = ({ variant = 'button', children, onClick }) => {
+export const Button = ({ variant = 'default', children, onClick }) => {
   return (
     <ButtonStyled variant={variant} onClick={onClick}>
       {children}
@@ -11,7 +11,7 @@ export const Button = ({ variant = 'button', children, onClick }) => {
 };
 
 Button.propTypes = {
-  children: PropTypes.node.isRequired,
   onClick: PropTypes.func,
-  variant: PropTypes.string,
+  children: PropTypes.node.isRequired,
+  variant: PropTypes.oneOf(['dark', 'light', 'warning', 'alert', 'mute']),
 };

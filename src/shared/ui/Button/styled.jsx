@@ -2,29 +2,17 @@ import styled from '@emotion/styled';
 
 import { RADII, SPACE, COLOR, FONT_WEIGHT, FONT_SIZE } from '@app/shared';
 
-const buttonTextColor = (variant) => {
-  switch (variant) {
-    case 'warning':
-      return `${COLOR.text.dark}`;
-
-    case 'alert':
-      return `${COLOR.text.light}`;
-
-    default:
-      return COLOR.text.light;
-  }
-};
-
 export const ButtonStyled = styled.button(({ variant }) => ({
   padding: `${SPACE.small} ${SPACE.medium}`,
   borderRadius: RADII.xxsmall,
-  backgroundColor: COLOR[variant].default,
-  transition: 'background-color .2s ease-in-out',
-  color: buttonTextColor(variant),
+  transition: 'background-color .2s ease-in-out , color .2s ease-in-out',
   fontWeight: FONT_WEIGHT.medium,
   fontSize: FONT_SIZE.small,
+  backgroundColor: COLOR.button[variant].normal.bg,
+  color: COLOR.button[variant].normal.text,
 
   '&:hover': {
-    backgroundColor: COLOR[variant].hover,
+    backgroundColor: COLOR.button[variant].hover.bg,
+    color: COLOR.button[variant].hover.text,
   },
 }));

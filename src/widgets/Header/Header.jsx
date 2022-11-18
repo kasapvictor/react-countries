@@ -9,8 +9,8 @@ export const Header = () => {
       <Container>
         <HeaderInner>
           <BrandStyled href="/">
-            <Text tag="p" variant="medium" size="xlarge">
-              Countries
+            <Text tag="p" variant="bold" size="xlarge">
+              React Countries
             </Text>
           </BrandStyled>
           <ThemeSwitcher />

@@ -60,12 +60,65 @@ export const COLOR = {
   },
 
   button: {
-    default: 'var(--color-button)',
-    hover: 'var(--color-button-hover)',
+    default: {
+      normal: {
+        bg: 'var(--color-button)',
+        text: 'var(--color-button-text)',
+      },
+      hover: {
+        bg: 'var(--color-button-hover)',
+        text: 'var(--color-button-text)',
+      },
+    },
+    dark: {
+      normal: {
+        bg: 'var(--color-button-dark)',
+        text: 'var(--color3)',
+      },
+      hover: {
+        bg: 'var(--color-button-dark-hover)',
+        text: 'var(--color3)',
+      },
+    },
+    alert: {
+      normal: {
+        bg: 'var(--color-alert)',
+        text: 'var(--color-button-text)',
+      },
+      hover: {
+        bg: 'var(--color-alert-hover)',
+        text: 'var(--color-button-text)',
+      },
+    },
+    warning: {
+      normal: {
+        bg: 'var(--color-warning)',
+        text: 'var(--color1)',
+      },
+      hover: {
+        bg: 'var(--color-warning-hover)',
+        text: 'var(--color1)',
+      },
+    },
+    mute: {
+      normal: {
+        bg: 'var(--color-button-mute)',
+        text: 'var(--color1)',
+      },
+      hover: {
+        bg: 'var(--color-button-mute-hover)',
+        text: 'var(--color1)',
+      },
+    },
   },
 
   bg: {
     default: 'var(--color-bg)',
+  },
+
+  icon: {
+    dark: 'var(--color-icon)',
+    light: 'var(--color-icon-light)',
   },
 
   base: {
