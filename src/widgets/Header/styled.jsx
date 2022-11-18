@@ -18,7 +18,7 @@ export const ThemeSwitcherStyled = styled.div({
   justifyContent: 'center',
   alignItems: 'center',
   gap: SPACE.gutter,
-  color: COLOR.icon.dark,
+  textTransform: 'capitalize',
 });
 
 export const BrandStyled = styled.a({

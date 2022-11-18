@@ -28,100 +28,65 @@
  * @type {{button: {hover: string, default: string}, alert: {default: string, light: string}, bg: {default: string}, link: {hover: string, default: string}, warning: {default: string, light: string}, text: {default: string, light: string}, base: {default: string}}}
  */
 export const COLOR = {
-  alert: {
-    default: 'var(--color-alert)',
-    hover: 'var(--color-alert-hover)',
-  },
-
-  alertLight: {
-    default: 'var(--color-alert-light)',
-    hover: 'var(--color-alert-hover)',
-  },
-
-  warning: {
-    default: 'var(--color-warning)',
-    hover: 'var(--color-warning-hover)',
-  },
-
-  warningLight: {
-    default: 'var(--color-warning-light)',
-    hover: 'var(--color-warning-light-hover)',
-  },
-
   text: {
-    default: 'var(--color-text)',
-    dark: 'var(--color-text-dark)',
-    light: 'var(--color-text-light)',
+    default: 'var(--color-theme1)',
   },
-
-  link: {
-    default: 'var(--color-link)',
-    hover: 'var(--color-link-hover)',
-  },
-
   button: {
-    default: {
-      normal: {
-        bg: 'var(--color-button)',
-        text: 'var(--color-button-text)',
-      },
-      hover: {
-        bg: 'var(--color-button-hover)',
-        text: 'var(--color-button-text)',
-      },
-    },
     dark: {
       normal: {
-        bg: 'var(--color-button-dark)',
-        text: 'var(--color3)',
+        bg: 'var(--color-theme5)',
+        text: 'var(--color2)',
       },
       hover: {
-        bg: 'var(--color-button-dark-hover)',
-        text: 'var(--color3)',
+        bg: 'var(--color-theme6)',
+        text: 'var(--color2)',
+      },
+    },
+    light: {
+      normal: {
+        bg: 'var(--color-theme7)',
+        text: 'var(--color-theme9)',
+      },
+      hover: {
+        bg: 'var(--color-theme8)',
+        text: 'var(--color-theme9)',
       },
     },
     alert: {
       normal: {
-        bg: 'var(--color-alert)',
-        text: 'var(--color-button-text)',
+        bg: 'var(--color23)',
+        text: 'var(--color-theme10)',
       },
       hover: {
-        bg: 'var(--color-alert-hover)',
-        text: 'var(--color-button-text)',
+        bg: 'var(--color24)',
+        text: 'var(--color-theme10)',
       },
     },
     warning: {
       normal: {
-        bg: 'var(--color-warning)',
+        bg: 'var(--color19)',
         text: 'var(--color1)',
       },
       hover: {
-        bg: 'var(--color-warning-hover)',
+        bg: 'var(--color20)',
         text: 'var(--color1)',
       },
     },
-    mute: {
+    default: {
       normal: {
-        bg: 'var(--color-button-mute)',
-        text: 'var(--color1)',
+        bg: 'var(--color-theme11)',
+        text: 'var(--color-theme12)',
       },
       hover: {
-        bg: 'var(--color-button-mute-hover)',
-        text: 'var(--color1)',
+        bg: 'var(--color5)',
+        text: 'var(--color-theme12)',
       },
     },
   },
-
   bg: {
-    default: 'var(--color-bg)',
+    default: 'var(--color-theme2)',
   },
-
-  icon: {
-    dark: 'var(--color-icon)',
-    light: 'var(--color-icon-light)',
-  },
-
   base: {
-    default: 'var(--color-base)',
+    default: 'var(--color-theme3)',
   },
 };

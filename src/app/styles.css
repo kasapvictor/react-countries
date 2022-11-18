@@ -54,83 +54,43 @@ html {
   --color30: #d0d0d0;
   --color31: hsl(207, 26%, 25%);
   --color32: hsl(207, 26%, 15%);
+  --color33: rgba(245, 245, 245, 0.2);
+  --color34: hsl(207, 26%, 35%);
+  --color35: hsl(207, 26%, 30%);
 }
 
 body[data-theme='light'] {
-  --color-warning: var(--color19);
-  --color-warning-hover: var(--color20);
+  --color-theme1: var(--color1);
+  --color-theme2: var(--color3);
+  --color-theme3: var(--color2);
+  --color-theme4: var(--color33);
+  --color-theme5: var(--color16);
+  --color-theme6: var(--color18);
+  --color-theme7: var(--color27);
+  --color-theme8: var(--color30);
+  --color-theme9: var(--color1);
+  --color-theme10: var(--color3);
+  --color-theme11: var(--color4);
+  --color-theme12: var(--color2);
 
-  --color-warning-light: var(--color21);
-  --color-warning-light-hover: var(--color22);
-
-  --color-alert: var(--color23);
-  --color-alert-hover: var(--color24);
-
-  --color-alert-light: var(--color25);
-  --color-alert-light-hover: var(--color26);
-
-  --color-text: var(--color1);
-  --color-text-dark: var(--color1);
-  --color-text-light: var(--color2);
-
-  --color-link: var(--color4);
-  --color-link-hover: var(--color5);
-
-  --color-button: var(--color4);
-  --color-button-text: var(--color2);
-  --color-button-hover: var(--color5);
-
-  --color-button-dark: var(--color16);
-  --color-button-dark-hover: var(--color31);
-
-  --color-button-mute: var(--color27);
-  --color-button-mute-hover: var(--color30);
-
-  --color-icon: var(--color16);
-  --color-icon-light: var(--color3);
-
-  --color-bg: var(--color3);
-  --color-base: var(--color2);
-
-  --shadow: var(--color14) 0 0 24px;
+  --shadow: var(--color14) 0 0 8px;
 }
 
 body[data-theme='dark'] {
-  --color-warning: var(--color19);
-  --color-warning-hover: var(--color20);
+  --color-theme1: var(--color2);
+  --color-theme2: var(--color16);
+  --color-theme3: var(--color18);
+  --color-theme4: var(--color14);
+  --color-theme5: var(--color14);
+  --color-theme6: var(--color16);
+  --color-theme7: var(--color34);
+  --color-theme8: var(--color35);
+  --color-theme9: var(--color3);
+  --color-theme10: var(--color3);
+  --color-theme11: var(--color4);
+  --color-theme12: var(--color2);
 
-  --color-warning-light: var(--color21);
-  --color-warning-light-hover: var(--color22);
-
-  --color-alert: var(--color23);
-  --color-alert-hover: var(--color24);
-
-  --color-alert-light: var(--color25);
-  --color-alert-light-hover: var(--color26);
-
-  --color-text: var(--color2);
-  --color-text-dark: var(--color16);
-  --color-text-light: var(--color1);
-
-  --color-link: var(--color4);
-  --color-link-hover: var(--color5);
-
-  --color-button: var(--color4);
-  --color-button-hover: var(--color5);
-
-  --color-button-dark: var(--color31);
-  --color-button-dark-hover: var(--color32);
-
-  --color-button-mute: var(--color27);
-  --color-button-mute-hover: var(--color30);
-
-  --color-icon: var(--color3);
-  --color-icon-light: var(--color16);
-
-  --color-bg: var(--color16);
-  --color-base: var(--color18);
-
-  --shadow: var(--color14) 0 0 8px;
+  --shadow: var(--color33) 0 2px 24px;
 }
 
 body {
@@ -138,12 +98,12 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  color: var(--color-text);
+  color: var(--color-theme1);
   font-weight: 300;
   font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-bg);
+  background-color: var(--color-theme3);
 }
 
 button {

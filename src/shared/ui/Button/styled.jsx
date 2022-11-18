@@ -10,6 +10,7 @@ export const ButtonStyled = styled.button(({ variant }) => ({
   fontSize: FONT_SIZE.small,
   backgroundColor: COLOR.button[variant].normal.bg,
   color: COLOR.button[variant].normal.text,
+  textTransform: 'inherit',
 
   '&:hover': {
     backgroundColor: COLOR.button[variant].hover.bg,
