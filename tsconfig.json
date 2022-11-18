@@ -5,9 +5,9 @@
       "@app/*": [
         "./src/*"
       ],
-      "@components": [
-        "./src/components"
-      ]
+      "@shared": [
+        "./src/shared*"
+      ],
     },
     "target": "ESNext",
     "useDefineForClassFields": true,

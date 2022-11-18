@@ -73,7 +73,7 @@ body[data-theme='light'] {
   --color-theme11: var(--color4);
   --color-theme12: var(--color2);
 
-  --shadow: var(--color14) 0 0 8px;
+  --shadow1: var(--color14) 0 0 8px;
 }
 
 body[data-theme='dark'] {
@@ -90,7 +90,7 @@ body[data-theme='dark'] {
   --color-theme11: var(--color4);
   --color-theme12: var(--color2);
 
-  --shadow: var(--color33) 0 2px 24px;
+  --shadow1: var(--color33) 0 2px 24px;
 }
 
 body {

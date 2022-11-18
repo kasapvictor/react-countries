@@ -1,6 +1,5 @@
 import { IoMoon, IoSunny } from 'react-icons/io5';
-
-import { Button } from '@app/shared';
+import { Button } from '@shared';
 
 import { ThemeSwitcherStyled } from './styled';
 import { useTheme } from './useTheme';

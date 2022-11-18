@@ -28,8 +28,8 @@ export default defineConfig({
         replacement: path.resolve(__dirname, 'src'),
       },
       {
-        find: '@components',
-        replacement: path.resolve(__dirname, 'src/components'),
+        find: '@shared',
+        replacement: path.resolve(__dirname, 'src/shared'),
       },
     ],
     extensions: ['.css', '.scss', '.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],

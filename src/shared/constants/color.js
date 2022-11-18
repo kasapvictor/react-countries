@@ -1,92 +1,21 @@
 /**
- *  alert: {
- *     default: '--color-alert',
- *     light: '--color-alert-light',
- *   },
  *
- *   warning: {
- *     default: '--color-warning',
- *     light: '--color-warning-light',
- *   },
- *
- *   text: {
- *     default: '--color-text',
- *   },
- *
- *   link: {
- *     default: '--color-link',
- *     hover: '--color-link-hover',
- *   },
- *
- *   bg: {
- *     default: '--color-bg',
- *   },
- *
- *   base: {
- *     default: '--color-base',
- *   },
- * @type {{button: {hover: string, default: string}, alert: {default: string, light: string}, bg: {default: string}, link: {hover: string, default: string}, warning: {default: string, light: string}, text: {default: string, light: string}, base: {default: string}}}
+ * @type {{color9: string, color7: string, color8: string, color5: string, color6: string, color3: string, color4: string, color1: string, color2: string, color10: string, color11: string, text: {default: string}, color12: string}}
  */
 export const COLOR = {
+  color1: 'var(--color-theme1)',
+  color2: 'var(--color-theme2)',
+  color3: 'var(--color-theme3)',
+  color4: 'var(--color-theme4)',
+  color5: 'var(--color-theme5)',
+  color6: 'var(--color-theme6)',
+  color7: 'var(--color-theme7)',
+  color8: 'var(--color-theme8)',
+  color9: 'var(--color-theme9)',
+  color10: 'var(--color-theme10)',
+  color11: 'var(--color-theme11)',
+  color12: 'var(--color-theme12)',
   text: {
     default: 'var(--color-theme1)',
-  },
-  button: {
-    dark: {
-      normal: {
-        bg: 'var(--color-theme5)',
-        text: 'var(--color2)',
-      },
-      hover: {
-        bg: 'var(--color-theme6)',
-        text: 'var(--color2)',
-      },
-    },
-    light: {
-      normal: {
-        bg: 'var(--color-theme7)',
-        text: 'var(--color-theme9)',
-      },
-      hover: {
-        bg: 'var(--color-theme8)',
-        text: 'var(--color-theme9)',
-      },
-    },
-    alert: {
-      normal: {
-        bg: 'var(--color23)',
-        text: 'var(--color-theme10)',
-      },
-      hover: {
-        bg: 'var(--color24)',
-        text: 'var(--color-theme10)',
-      },
-    },
-    warning: {
-      normal: {
-        bg: 'var(--color19)',
-        text: 'var(--color1)',
-      },
-      hover: {
-        bg: 'var(--color20)',
-        text: 'var(--color1)',
-      },
-    },
-    default: {
-      normal: {
-        bg: 'var(--color-theme11)',
-        text: 'var(--color-theme12)',
-      },
-      hover: {
-        bg: 'var(--color5)',
-        text: 'var(--color-theme12)',
-      },
-    },
-  },
-  bg: {
-    default: 'var(--color-theme2)',
-  },
-  base: {
-    default: 'var(--color-theme3)',
   },
 };

@@ -6,8 +6,8 @@
  * @type {{hover: string, default: string, focus: string, active: string}}
  */
 export const SHADOW = {
-  default: 'var(--shadow)',
-  hover: 'var(--shadow)',
-  focus: 'var(--shadow)',
-  active: 'var(--shadow)',
+  default: 'var(--shadow1)',
+  hover: 'var(--shadow1)',
+  focus: 'var(--shadow1)',
+  active: 'var(--shadow1)',
 };
