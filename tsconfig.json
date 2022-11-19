@@ -8,6 +8,9 @@
       "@shared": [
         "./src/shared*"
       ],
+      "@widgets": [
+        "./src/widgets*"
+      ]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,

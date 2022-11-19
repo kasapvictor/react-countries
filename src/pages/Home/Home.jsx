@@ -1,4 +1,9 @@
-import { Header } from '@app/widgets';
+import { Filter, Main } from '@widgets';
+
 export const Home = () => {
-  return <Header />;
+  return (
+    <Main>
+      <Filter />
+    </Main>
+  );
 };

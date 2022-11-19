@@ -31,6 +31,10 @@ export default defineConfig({
         find: '@shared',
         replacement: path.resolve(__dirname, 'src/shared'),
       },
+      {
+        find: '@widgets',
+        replacement: path.resolve(__dirname, 'src/widgets'),
+      },
     ],
     extensions: ['.css', '.scss', '.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'],
   },

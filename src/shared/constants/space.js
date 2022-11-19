@@ -15,6 +15,7 @@ export const SPACE = {
   xxsmall: '0.25rem', // 4px
   xsmall: '0.5rem', // 8px
   small: '0.75rem', // 12px
+  normal: '1rem', // 16px
   medium: '1.25rem', // 20px
   gutter: '1.5rem', // 24px
   large: '2rem', // 32px

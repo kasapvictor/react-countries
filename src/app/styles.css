@@ -73,7 +73,7 @@ body[data-theme='light'] {
   --color-theme11: var(--color4);
   --color-theme12: var(--color2);
 
-  --shadow1: var(--color14) 0 0 8px;
+  --shadow1: var(--color14) 0px 8px 24px;
 }
 
 body[data-theme='dark'] {
@@ -81,7 +81,7 @@ body[data-theme='dark'] {
   --color-theme2: var(--color16);
   --color-theme3: var(--color18);
   --color-theme4: var(--color14);
-  --color-theme5: var(--color14);
+  --color-theme5: var(--color15);
   --color-theme6: var(--color16);
   --color-theme7: var(--color34);
   --color-theme8: var(--color35);
@@ -90,7 +90,7 @@ body[data-theme='dark'] {
   --color-theme11: var(--color4);
   --color-theme12: var(--color2);
 
-  --shadow1: var(--color33) 0 2px 24px;
+  --shadow1: var(--color33) 0 0 8px;
 }
 
 body {

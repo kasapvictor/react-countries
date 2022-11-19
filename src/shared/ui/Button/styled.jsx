@@ -4,7 +4,7 @@ import { RADII, SPACE, COLOR, FONT_WEIGHT, FONT_SIZE } from '@shared';
 const color = {
   dark: {
     normal: {
-      bg: COLOR.color1,
+      bg: COLOR.color5,
       text: COLOR.color12,
     },
     hover: {
@@ -56,7 +56,7 @@ const color = {
 
 export const ButtonStyled = styled.button(({ variant }) => ({
   padding: `${SPACE.small} ${SPACE.medium}`,
-  borderRadius: RADII.xxsmall,
+  borderRadius: RADII.xsmall,
   transition: 'background-color .2s ease-in-out , color .2s ease-in-out',
   fontWeight: FONT_WEIGHT.medium,
   fontSize: FONT_SIZE.small,
