@@ -58,31 +58,50 @@ export const SearchInput = styled.input({
 export const selectStyles = {
   control: (provided) => ({
     ...provided,
+    border: 'none',
     color: COLOR.color1,
     padding: SPACE.xsmall,
+    fontSize: FONT_SIZE.small,
     boxShadow: SHADOW.default,
     borderRadius: RADII.xsmall,
     backgroundColor: COLOR.color3,
-    fontSize: FONT_SIZE.small,
-    border: 'none',
+  }),
+  indicatorsContainer: (provided) => ({
+    ...provided,
+    cursor: 'pointer',
+
+    svg: {
+      color: COLOR.color1,
+    },
+  }),
+  clearIndicatorSvg: (provided) => ({
+    ...provided,
   }),
   option: (provided, state) => ({
     ...provided,
-    cursor: 'pointer',
-    color: state.isSelected ? COLOR.color2 : COLOR.color1,
-    backgroundColor: state.isSelected ? COLOR.color2 : COLOR.color3,
-    border: 'none',
     margin: 0,
+    border: 'none',
+    cursor: 'pointer',
+    color: COLOR.color1,
+    fontSize: FONT_SIZE.small,
+    backgroundColor: state.isSelected ? COLOR.color2 : COLOR.color3,
 
     ':active': {
       ...provided[':active'],
+      color: COLOR.color1,
       backgroundColor: state.isFocused ? COLOR.color2 : COLOR.color3,
     },
   }),
   placeholder: (provided) => ({ ...provided }),
-  singleValue: (provided) => ({ ...provided }),
-  input: (provided) => ({ ...provided }),
-  menu: (provided) => ({ ...provided }),
+  singleValue: (provided) => ({ ...provided, color: COLOR.color1 }),
+  input: (provided) => ({ ...provided, color: COLOR.color1 }),
+  menu: (provided) => ({
+    ...provided,
+    overflow: 'hidden',
+    boxShadow: SHADOW.default,
+    borderRadius: RADII.xsmall,
+    backgroundColor: COLOR.color3,
+  }),
   menuList: (provided) => ({
     ...provided,
     paddingTop: 0,
@@ -95,21 +114,5 @@ export const SelectStyled = styled(Select)({
 
   '@media (min-width: 767px)': {
     maxWidth: 250,
-  },
-
-  '& > *': {
-    boxShadow: SHADOW.default,
-  },
-
-  '& *': {
-    fontSize: FONT_SIZE.small,
-    color: `${COLOR.color1}!important`,
-  },
-
-  '& > div[id]': {
-    overflow: 'hidden',
-    boxShadow: SHADOW.default,
-    borderRadius: RADII.xsmall,
-    backgroundColor: COLOR.color3,
   },
 });
