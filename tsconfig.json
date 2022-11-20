@@ -8,6 +8,9 @@
       "@shared": [
         "./src/shared*"
       ],
+      "@features": [
+        "./src/features*"
+      ],
       "@widgets": [
         "./src/widgets*"
       ]
