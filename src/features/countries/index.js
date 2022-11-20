@@ -1,5 +1,5 @@
+export { List as CountriesList } from './list';
 export * as countriesModel from './model';
-export { CountryList } from './country-list';
-export { CountrySearch } from './country-search';
-export { CountryDetails } from './country-details';
-export { CountrySelectRegion } from './country-select-region';
+export { Search as CountriesSearch } from './search';
+export { Details as CountryDetails } from './details';
+export { SelectRegion as CountriesSelectRegion } from './select-region';

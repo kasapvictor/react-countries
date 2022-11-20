@@ -1,5 +1,5 @@
 import { Container } from '@shared';
-import { CountrySelectRegion, CountrySearch } from '@features';
+import { CountriesSelectRegion, CountriesSearch } from '@features';
 
 import { FilterInner, FilterStyled } from './styled';
 
@@ -8,8 +8,8 @@ export const Filter = () => {
     <FilterStyled>
       <Container>
         <FilterInner>
-          <CountrySearch />
-          <CountrySelectRegion />
+          <CountriesSearch />
+          <CountriesSelectRegion />
         </FilterInner>
       </Container>
     </FilterStyled>
