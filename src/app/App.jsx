@@ -1,5 +1,5 @@
 import './styles.css';
-import { Header } from '@shared';
+import { Header } from '@widgets';
 import { Provider } from 'react-redux';
 
 import { store } from '@app/store';

@@ -1,6 +1,5 @@
-import { Brand, ThemeSwitcher } from '@widgets';
-
-import { Container } from '@app/shared';
+import { Container, Brand } from '@shared';
+import { ThemeSwitcher } from '@features';
 
 import { HeaderInner, HeaderStyled } from './styled';
 

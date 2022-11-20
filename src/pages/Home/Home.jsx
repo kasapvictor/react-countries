@@ -1,6 +1,6 @@
 import { Main } from '@shared';
 import { useEffect } from 'react';
-import { Filter } from '@widgets';
+import { Filter } from '@widgets/Filter';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountries, selectCountriesIds, selectCountryById } from '@features';
 
