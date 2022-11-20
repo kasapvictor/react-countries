@@ -1,4 +1,3 @@
-export { Text } from './Text';
-export { Title } from './Title';
-export { Brand } from './Brand';
-export { Button } from './Button';
+export { Text } from './text';
+export { Title } from './title';
+export { Button } from './button';

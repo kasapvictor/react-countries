@@ -1,1 +1,0 @@
-export { SelectRegion } from './SelectRegion';

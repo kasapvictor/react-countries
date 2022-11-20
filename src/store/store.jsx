@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { countriesReducer } from '@features';
+import { countriesModel } from '@features';
 
 export const store = configureStore({
   reducer: {
-    countries: countriesReducer,
+    countries: countriesModel.reducer,
   },
 });

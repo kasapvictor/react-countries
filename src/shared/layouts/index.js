@@ -1,3 +1,3 @@
-export { Main } from './Main';
-export { Columns } from './Columns';
-export { Container } from './Container';
+export { Main } from './main';
+export { Columns } from './columns';
+export { Container } from './container';

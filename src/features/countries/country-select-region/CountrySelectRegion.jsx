@@ -8,7 +8,7 @@ const options = [
   { value: 'Oceania', label: 'Oceania' },
 ];
 
-export const SelectRegion = () => {
+export const CountrySelectRegion = () => {
   const handleSelect = (option) => {
     // eslint-disable-next-line no-console
     console.log('option', option);

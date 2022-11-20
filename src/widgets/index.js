@@ -1,2 +1,2 @@
-export { Filter } from './Filter';
-export { Header } from './Header';
+export { Filter } from './filter';
+export { Header } from './header';
