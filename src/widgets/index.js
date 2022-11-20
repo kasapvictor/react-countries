@@ -1,3 +1,3 @@
-export { Header } from './Header';
+export { Brand } from './Brand';
 export { Filter } from './Filter';
-export { Main } from './Main';
+export { ThemeSwitcher } from './ThemeSwitcher';

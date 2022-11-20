@@ -92,7 +92,7 @@ export const selectStyles = {
       backgroundColor: state.isFocused ? COLOR.color2 : COLOR.color3,
     },
   }),
-  placeholder: (provided) => ({ ...provided }),
+  placeholder: (provided) => ({ ...provided, color: COLOR.color1 }),
   singleValue: (provided) => ({ ...provided, color: COLOR.color1 }),
   input: (provided) => ({ ...provided, color: COLOR.color1 }),
   menu: (provided) => ({

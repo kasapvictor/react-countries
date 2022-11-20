@@ -1,6 +1,6 @@
 import './styles.css';
 
-import { Header } from '@widgets';
+import { Header } from '@shared';
 
 import { Home } from '@app/pages';
 
