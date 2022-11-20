@@ -28,8 +28,16 @@ export default defineConfig({
         replacement: path.resolve(__dirname, 'src'),
       },
       {
+        find: '@entities',
+        replacement: path.resolve(__dirname, 'src/entities'),
+      },
+      {
         find: '@features',
         replacement: path.resolve(__dirname, 'src/features'),
+      },
+      {
+        find: '@pages',
+        replacement: path.resolve(__dirname, 'src/pages'),
       },
       {
         find: '@shared',

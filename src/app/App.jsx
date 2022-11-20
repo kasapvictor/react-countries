@@ -1,9 +1,9 @@
-import './styles.css';
-import { Header } from '@widgets';
 import { Provider } from 'react-redux';
+import { Header } from '@widgets';
+import { Home } from '@pages';
 
-import { store } from '@app/store';
-import { Home } from '@app/pages';
+import './styles/styles.css';
+import { store } from './store';
 
 export const App = () => {
   return (

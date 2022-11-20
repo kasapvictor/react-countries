@@ -1,13 +1,15 @@
 ## React Countries
 
 ### FSD
+![img.png](img.png)
+![img_1.png](img_1.png)
 ~~~
 По уровню знания/ответственности
-app > processes > pages > features > entities > shared
+app > processes > pages > widgets > features > entities > shared
 ~~~
 ~~~
 По уровню опасности изменений
-shared > entities > features > pages > processes > app
+shared > entities > features > widgets > pages > processes > app
 ~~~
 ~~~
 └── src/

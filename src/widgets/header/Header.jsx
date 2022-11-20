@@ -1,7 +1,7 @@
 import { Container } from '@shared';
 import { ThemeSwitcher } from '@features';
 
-import { Brand } from './ui';
+import { Brand } from './components';
 import { HeaderInner, HeaderStyled } from './styled';
 
 export const Header = () => {
