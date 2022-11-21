@@ -1,5 +1,5 @@
-import { Container } from '@shared';
 import { CountrySelectRegion, CountrySearch } from '@features';
+import { Container } from '@shared';
 
 import { FilterInner, FilterStyled } from './styled';
 

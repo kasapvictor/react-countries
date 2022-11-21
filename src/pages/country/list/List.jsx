@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { countryModel } from '@entities';
 import { Main } from '@shared';
 import { CountryFilter } from '@widgets';
-import { countryModel } from '@entities';
 
 // eslint-disable-next-line react/prop-types
 const Country = ({ countryId }) => {

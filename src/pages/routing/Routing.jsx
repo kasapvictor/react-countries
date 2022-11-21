@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { NotFound } from '../not-found';
 import { CountryList, CountryDetails } from '../country';
+import { NotFound } from '../not-found';
 
 export const Routing = () => {
   return (

@@ -1,5 +1,5 @@
-import { Container } from '@shared';
 import { ThemeSwitcher } from '@features';
+import { Container } from '@shared';
 
 import { Brand } from './components';
 import { HeaderInner, HeaderStyled } from './styled';
