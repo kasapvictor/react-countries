@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { THEME } from './constants';
+import { THEME } from '../constants';
 
 export const useTheme = () => {
   const [theme, setTheme] = useState(THEME.LIGHT);

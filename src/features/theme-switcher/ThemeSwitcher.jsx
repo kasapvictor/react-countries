@@ -1,9 +1,9 @@
 import { IoMoon, IoSunny } from 'react-icons/io5';
 import { Button } from '@shared';
 
-import { ThemeSwitcherStyled } from './styled';
-import { useTheme } from './useTheme';
+import { useTheme } from './model';
 import { THEME } from './constants';
+import { ThemeSwitcherStyled } from './styled';
 
 export const ThemeSwitcher = () => {
   const [theme, handleTheme] = useTheme();

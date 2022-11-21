@@ -2,7 +2,7 @@ import { Main } from '@shared';
 // import { useEffect } from 'react';
 import { Filter } from '@widgets/Filter';
 // import { useDispatch, useSelector } from 'react-redux';
-// import { countriesModel } from '@features';
+// import { countryModel } from '@entity';
 
 // eslint-disable-next-line react/prop-types
 // const Country = ({ countryId }) => {
@@ -15,7 +15,7 @@ import { Filter } from '@widgets/Filter';
 //   );
 // };
 
-export const Home = () => {
+export const Countries = () => {
   // const dispatch = useDispatch();
   // const countries = useSelector(countriesModel.selectIds);
   //
