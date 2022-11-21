@@ -1,6 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import { countriesAdapter } from './slice';
+import { countryAdapter } from './slice';
 
 export const selectFetchStatus = createSelector(
   [(state) => state.countries.statusFetch, (state) => state.countries.errorFetch],
@@ -9,6 +9,6 @@ export const selectFetchStatus = createSelector(
   },
 );
 
-export const { selectById, selectIds } = countriesAdapter.getSelectors((state) => {
+export const { selectById, selectIds } = countryAdapter.getSelectors((state) => {
   return state.countries;
 });

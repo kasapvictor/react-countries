@@ -3,14 +3,14 @@ import { STATUS } from '@shared';
 
 import { fetchCountries } from './actions';
 
-export const countriesAdapter = createEntityAdapter({
+export const countryAdapter = createEntityAdapter({
   selectId: (country) => country.cca3,
   sortComparer: ({ name: { common: commonA } }, { name: { common: commonB } }) => commonA.localeCompare(commonB),
 });
 
 const slice = createSlice({
-  name: 'countries',
-  initialState: countriesAdapter.getInitialState({
+  name: 'country',
+  initialState: countryAdapter.getInitialState({
     errorFetch: null,
     statusFetch: STATUS.IDLE_STATUS,
   }),
@@ -26,7 +26,8 @@ const slice = createSlice({
         state.statusFetch = STATUS.FAILED_STATUS;
       })
       .addCase(fetchCountries.fulfilled, (state, { payload }) => {
-        countriesAdapter.upsertMany(state, payload);
+        countryAdapter.upsertMany(state, payload);
+
         state.statusFetch = STATUS.SUCCESS_STATUS;
       });
   },
