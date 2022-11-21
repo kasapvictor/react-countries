@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { App } from '@app/app';
+import { App } from '@app';
 
 const init = () => {
   const rootContainer = document.getElementById('root');

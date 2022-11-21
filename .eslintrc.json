@@ -41,14 +41,33 @@
         "newlines-between": "always",
         "pathGroups": [
           {
-            "pattern": "@app/**",
+            "pattern": "@app",
             "group": "internal",
             "position": "after"
           },
           {
-            "pattern": "@components",
-            "group": "internal",
-            "position": "after"
+            "pattern": "@process",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@pages",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@widgets",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@features",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@entities",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@shared",
+            "group": "sibling"
           },
           {
             "pattern": "./**",

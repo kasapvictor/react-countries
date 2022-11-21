@@ -24,8 +24,12 @@ export default defineConfig({
         replacement: '',
       },
       {
-        find: '@app',
+        find: '@root',
         replacement: path.resolve(__dirname, 'src'),
+      },
+      {
+        find: '@app',
+        replacement: path.resolve(__dirname, 'src/app'),
       },
       {
         find: '@entities',
