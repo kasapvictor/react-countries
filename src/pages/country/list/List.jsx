@@ -1,6 +1,6 @@
 import { Main } from '@shared';
 import { useEffect } from 'react';
-import { Filter } from '@widgets/Filter';
+import { CountryFilter } from '@widgets';
 import { useDispatch, useSelector } from 'react-redux';
 import { countryModel } from '@entities';
 
@@ -15,7 +15,7 @@ const Country = ({ countryId }) => {
   );
 };
 
-export const Countries = () => {
+export const List = () => {
   const dispatch = useDispatch();
   const countries = useSelector(countryModel.selectIds);
 
@@ -26,7 +26,7 @@ export const Countries = () => {
   return (
     <>
       <Main>
-        <Filter />
+        <CountryFilter />
         {countries.map((countryId) => (
           <Country key={countryId} countryId={countryId} />
         ))}

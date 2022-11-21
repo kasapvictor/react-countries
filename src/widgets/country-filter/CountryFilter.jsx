@@ -3,7 +3,7 @@ import { CountrySelectRegion, CountrySearch } from '@features';
 
 import { FilterInner, FilterStyled } from './styled';
 
-export const Filter = () => {
+export const CountryFilter = () => {
   return (
     <FilterStyled>
       <Container>

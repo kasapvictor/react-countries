@@ -1,1 +1,1 @@
-export { Countries } from './countries';
+export * from './country';

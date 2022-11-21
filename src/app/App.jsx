@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux';
 import { Header } from '@widgets';
-import { Countries } from '@pages';
+import { CountryList } from '@pages';
 
 import './styles/styles.css';
 import { store } from './store';
@@ -10,7 +10,7 @@ export const App = () => {
     <>
       <Header />
       <Provider store={store}>
-        <Countries />
+        <CountryList />
       </Provider>
     </>
   );
