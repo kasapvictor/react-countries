@@ -1,5 +1,6 @@
-import { SPACE, SHADOW } from '@app/shared';
 import styled from '@emotion/styled';
+
+import { SPACE, SHADOW } from '@shared';
 
 export const HeaderStyled = styled.header({
   padding: `${SPACE.gutter} 0`,
