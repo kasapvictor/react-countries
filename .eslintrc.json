@@ -17,7 +17,8 @@
       { "type": "widgets", "pattern": "widgets/*" },
       { "type": "features", "pattern": "features/*" },
       { "type": "entities", "pattern": "entities/*" },
-      { "type": "shared", "pattern": "shared/*" }
+      { "type": "shared", "pattern": "shared/*" },
+      { "type": "templates", "pattern": "templates/*" }
     ]
   },
   "ignorePatterns": ["**/*.css", "**/*.scss", "**/*.svg", "**/*.md"],
@@ -83,6 +84,10 @@
           },
           {
             "pattern": "@shared",
+            "group": "sibling"
+          },
+          {
+            "pattern": "@templates",
             "group": "sibling"
           },
           {

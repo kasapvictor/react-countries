@@ -1,10 +1,10 @@
-import { Text } from '@app/shared';
+import { Text } from '@shared';
 
 import { BrandStyled } from './styled';
 
 export const Brand = () => {
   return (
-    <BrandStyled href="/">
+    <BrandStyled to="/">
       <Text tag="p" variant="bold" size="xlarge">
         React Countries
       </Text>

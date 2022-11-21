@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
 import path from 'path';
 
@@ -46,6 +46,10 @@ export default defineConfig({
       {
         find: '@shared',
         replacement: path.resolve(__dirname, 'src/shared'),
+      },
+      {
+        find: '@templates',
+        replacement: path.resolve(__dirname, 'src/templates'),
       },
       {
         find: '@widgets',

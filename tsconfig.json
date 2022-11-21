@@ -20,6 +20,9 @@
       "@shared": [
         "./src/shared"
       ],
+      "@templates": [
+        "./src/templates"
+      ],
       "@widgets": [
         "./src/widgets"
       ]
