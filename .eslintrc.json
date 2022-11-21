@@ -6,7 +6,19 @@
   "settings": {
     "react": {
       "version": "detect"
-    }
+    },
+//    "import/resolver": {
+//      "typescript": {}
+//    },
+    "boundaries/elements": [
+      { "type": "app", "pattern": "app/*" },
+      { "type": "processes", "pattern": "processes/*" },
+      { "type": "pages", "pattern": "pages/*" },
+      { "type": "widgets", "pattern": "widgets/*" },
+      { "type": "features", "pattern": "features/*" },
+      { "type": "entities", "pattern": "entities/*" },
+      { "type": "shared", "pattern": "shared/*" }
+    ]
   },
   "ignorePatterns": ["**/*.css", "**/*.scss", "**/*.svg", "**/*.md"],
   "extends": [
@@ -38,6 +50,10 @@
     "import/order": [
       "error",
       {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
         "newlines-between": "always",
         "pathGroups": [
           {
@@ -75,13 +91,14 @@
             "position": "after"
           }
         ],
+
         "groups": [
           "external",
-          "parent",
+          "builtin",
           "sibling",
-          "index",
-          "object",
-          "type"
+          "parent",
+          "internal",
+          "index"
         ],
         "pathGroupsExcludedImportTypes": [
           "builtin"

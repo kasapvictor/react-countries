@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 import { SPACE, SHADOW } from '@app/shared';
 
 export const HeaderStyled = styled.header({

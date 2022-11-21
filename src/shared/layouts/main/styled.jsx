@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+
 import { SPACE } from '@shared';
 
 export const MainStyled = styled.main({

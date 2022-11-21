@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 import { FONT_SIZE, FONT_WEIGHT } from '@app/shared';
 
 const commonStyles = ({ size, variant }) => ({

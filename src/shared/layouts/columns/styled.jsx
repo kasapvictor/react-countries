@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 import { SPACE } from '@app/shared';
 
 const buildColumns = (columns) => Array(columns).fill('1fr').join(' ');

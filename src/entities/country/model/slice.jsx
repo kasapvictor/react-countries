@@ -1,4 +1,5 @@
 import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
+
 import { STATUS } from '@shared';
 
 import { fetchCountries } from './actions';

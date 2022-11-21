@@ -1,7 +1,7 @@
 import './styles/styles.css';
 
-import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
 import { Routing } from '@pages';
 import { Header } from '@widgets';

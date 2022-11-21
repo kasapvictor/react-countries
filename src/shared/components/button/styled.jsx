@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+
 import { RADII, SPACE, COLOR, FONT_WEIGHT, FONT_SIZE } from '@shared';
 
 const color = {

@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-
 import { SPACE } from '@app/shared';
 
 export const ThemeSwitcherStyled = styled.div({

@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import Select from 'react-select';
+
 import { SPACE, COLOR, RADII, SHADOW, FONT_SIZE } from '@shared';
 
 export const FilterStyled = styled.div({
