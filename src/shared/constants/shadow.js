@@ -11,4 +11,5 @@ export const SHADOW = {
   focus: 'var(--shadow1)',
   active: 'var(--shadow1)',
   footer: 'var(--shadow2)',
+  card: 'var(--shadow3)',
 };

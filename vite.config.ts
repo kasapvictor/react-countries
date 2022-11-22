@@ -48,10 +48,6 @@ export default defineConfig({
         replacement: path.resolve(__dirname, 'src/shared'),
       },
       {
-        find: '@templates',
-        replacement: path.resolve(__dirname, 'src/templates'),
-      },
-      {
         find: '@widgets',
         replacement: path.resolve(__dirname, 'src/widgets'),
       },

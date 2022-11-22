@@ -1,8 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 
-import { BaseTemplate } from '@templates';
-
-import { CountryList, CountryDetails } from '../country';
+import { CountryList, CountryDetails } from '../contents';
+import { BaseTemplate } from '../templates';
 
 export const Routing = () => {
   return (
