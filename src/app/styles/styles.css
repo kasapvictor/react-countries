@@ -75,6 +75,7 @@ body[data-theme='light'] {
   --color-theme10: var(--color3);
   --color-theme11: var(--color4);
   --color-theme12: var(--color2);
+  --color-theme13: var(--color5);
 
   --shadow1: var(--color14) 0px 8px 24px;
 }
@@ -92,6 +93,7 @@ body[data-theme='dark'] {
   --color-theme10: var(--color3);
   --color-theme11: var(--color4);
   --color-theme12: var(--color2);
+  --color-theme13: var(--color5);
 
   --shadow1: var(--color33) 0 0 8px;
 }
