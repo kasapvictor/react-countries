@@ -1,9 +1,17 @@
-import { Main } from '@shared';
+import { useNavigate, useParams } from 'react-router-dom';
 
 export const Defailts = () => {
+  const { countryId } = useParams();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(-1);
+  };
+
   return (
     <>
-      <Main>Details</Main>
+      <button onClick={handleClick}>Back</button>
+      Details {countryId}
     </>
   );
 };
