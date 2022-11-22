@@ -2,9 +2,8 @@
 // import { useDispatch, useSelector } from 'react-redux';
 
 // import { countryModel } from '@entities';
-import { Link } from 'react-router-dom';
 
-import { Main } from '@shared';
+import { Container } from '@shared';
 import { CountryFilter } from '@widgets';
 
 // eslint-disable-next-line react/prop-types
@@ -27,15 +26,12 @@ export const List = () => {
   // }, []);
 
   return (
-    <>
-      <Main>
-        <CountryFilter />
-        Countries List
-        <Link to="/notfound">NotFound Link</Link>
-        {/* {countries.map((countryId) => ( */}
-        {/*  <Country key={countryId} countryId={countryId} /> */}
-        {/* ))} */}
-      </Main>
-    </>
+    <Container>
+      <CountryFilter />
+      Countries List
+      {/* {countries.map((countryId) => ( */}
+      {/*  <Country key={countryId} countryId={countryId} /> */}
+      {/* ))} */}
+    </Container>
   );
 };

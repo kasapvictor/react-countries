@@ -1,12 +1,15 @@
 import { Outlet } from 'react-router-dom';
 
+import { Main } from '@shared';
 import { Header } from '@widgets';
 
 export const Base = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <Main>
+        <Outlet />
+      </Main>
     </>
   );
 };
