@@ -23,8 +23,6 @@ export const ListItem = styled.li({
   '&:hover': {
     boxShadow: SHADOW.hover,
   },
-
-  height: 200,
 });
 
 export const LinkStyled = styled(Link)({
