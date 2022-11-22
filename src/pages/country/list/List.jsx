@@ -1,36 +1,40 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { countryModel } from '@entities';
-import { Container } from '@shared';
+import { CountryCard, countryModel } from '@entities';
+import { Container, STATUS, Text } from '@shared';
 import { CountryFilter } from '@widgets';
 
-// eslint-disable-next-line react/prop-types
-const Country = ({ countryId }) => {
-  const countryById = useSelector((state) => countryModel.selectById(state, countryId));
-
-  return (
-    <p>
-      [{countryById.cca3}] :{countryById.name.common}
-    </p>
-  );
-};
+import { LinkStyled, ListItem, ListStyled } from './styled';
 
 export const List = () => {
   const dispatch = useDispatch();
-  const countries = useSelector(countryModel.selectIds);
+  const countriesIds = useSelector(countryModel.selectIds);
+  const { statusFetch, errorFetch } = useSelector(countryModel.selectFetchStatus);
 
   useEffect(() => {
-    dispatch(countryModel.fetchCountries());
+    if (statusFetch === STATUS.IDLE_STATUS) {
+      dispatch(countryModel.fetchCountries());
+    }
   }, []);
 
   return (
     <Container>
       <CountryFilter />
-      Countries List
-      {countries.map((countryId) => (
-        <Country key={countryId} countryId={countryId} />
-      ))}
+      {statusFetch === STATUS.LOADING_STATUS && <Text tag="code">Loading ...</Text>}
+      {statusFetch === STATUS.FAILED_STATUS && <Text tag="code">{errorFetch}</Text>}
+
+      {statusFetch === STATUS.SUCCESS_STATUS && (
+        <ListStyled>
+          {countriesIds.map((countryId) => (
+            <ListItem key={countryId}>
+              <LinkStyled to={`/country/${countryId}`}>
+                <CountryCard countryId={countryId} />
+              </LinkStyled>
+            </ListItem>
+          ))}
+        </ListStyled>
+      )}
     </Container>
   );
 };

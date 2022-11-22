@@ -28,7 +28,6 @@ const slice = createSlice({
       })
       .addCase(fetchCountries.fulfilled, (state, { payload }) => {
         countryAdapter.upsertMany(state, payload);
-
         state.statusFetch = STATUS.SUCCESS_STATUS;
       });
   },

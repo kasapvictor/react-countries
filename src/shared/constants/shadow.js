@@ -7,7 +7,7 @@
  */
 export const SHADOW = {
   default: 'var(--shadow1)',
-  hover: 'var(--shadow1)',
+  hover: 'var(--shadow3)',
   focus: 'var(--shadow1)',
   active: 'var(--shadow1)',
   footer: 'var(--shadow2)',
