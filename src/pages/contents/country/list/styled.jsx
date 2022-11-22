@@ -14,9 +14,9 @@ export const ListStyled = styled.ul({
 
 export const ListItem = styled.li({
   border: '1px solid',
-  borderColor: COLOR.color10,
+  borderColor: COLOR.color14,
   borderRadius: RADII.xsmall,
-  boxShadow: SHADOW.default,
+  boxShadow: SHADOW.card,
   transition: 'box-shadow .2s ease-in-out',
   overflow: 'hidden',
 

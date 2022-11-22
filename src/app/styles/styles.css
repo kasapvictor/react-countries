@@ -76,11 +76,12 @@ body[data-theme='light'] {
   --color-theme11: var(--color4);
   --color-theme12: var(--color2);
   --color-theme13: var(--color5);
+  --color-theme14: var(--color3);
 
   --shadow1: var(--color14) 0px 8px 24px;
   --shadow2: var(--color14) 0px -8px 24px;
   --shadow3: var(--color14) 0px 8px 48px;
-  --shadow4: var(--color14) 0px 8px 8px;
+  --shadow4: var(--color14) 0px 4px 12px;
 }
 
 body[data-theme='dark'] {
@@ -97,6 +98,7 @@ body[data-theme='dark'] {
   --color-theme11: var(--color4);
   --color-theme12: var(--color2);
   --color-theme13: var(--color5);
+  --color-theme14: var(--color35);
 
   --shadow1: var(--color33) 0 0 8px;
   --shadow2: var(--color33) 0 -2px 8px;
