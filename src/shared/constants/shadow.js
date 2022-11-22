@@ -10,4 +10,5 @@ export const SHADOW = {
   hover: 'var(--shadow1)',
   focus: 'var(--shadow1)',
   active: 'var(--shadow1)',
+  footer: 'var(--shadow2)',
 };

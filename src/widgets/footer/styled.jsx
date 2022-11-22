@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { SHADOW, SPACE } from '@shared';
 
 export const FooterStyled = styled.footer({
-  boxShadow: SHADOW.default,
+  boxShadow: SHADOW.footer,
 });
 
 export const FooterInner = styled.div({

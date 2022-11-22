@@ -78,6 +78,7 @@ body[data-theme='light'] {
   --color-theme13: var(--color5);
 
   --shadow1: var(--color14) 0px 8px 24px;
+  --shadow2: var(--color14) 0px -8px 24px;
 }
 
 body[data-theme='dark'] {
@@ -96,6 +97,7 @@ body[data-theme='dark'] {
   --color-theme13: var(--color5);
 
   --shadow1: var(--color33) 0 0 8px;
+  --shadow2: var(--color33) 0 -2px 8px;
 }
 
 body {
@@ -115,4 +117,10 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
