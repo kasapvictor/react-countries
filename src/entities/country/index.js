@@ -1,4 +1,2 @@
 export * as countryModel from './model';
-export { Card as CountryCard } from './components';
-// countryCard
-// countryDetails
+export { CountryCard, CountryDetails } from './components';
