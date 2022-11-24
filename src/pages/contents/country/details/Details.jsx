@@ -31,6 +31,7 @@ export const Details = () => {
       </DetailsTop>
       <DetailsContent>
         {statusFetch === STATUS.LOADING_STATUS && <Text tag="code">Loading Details ...</Text>}
+
         {statusFetch === STATUS.FAILED_STATUS && <Text tag="code">{errorFetch}</Text>}
 
         {statusFetch === STATUS.SUCCESS_STATUS && <CountryDetails countryId={countryId} />}
