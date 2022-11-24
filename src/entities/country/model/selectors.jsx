@@ -9,6 +9,14 @@ export const selectFetchStatus = createSelector(
   },
 );
 
+export const selectSearchValue = createSelector([(state) => state.countries.search], (value) => {
+  return value;
+});
+
+export const selectFilteredIds = createSelector([(state) => state.countries.filtered], (filtered) => {
+  return filtered;
+});
+
 export const { selectById, selectIds } = countryAdapter.getSelectors((state) => {
   return state.countries;
 });

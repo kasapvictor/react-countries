@@ -10,7 +10,10 @@ import { LinkStyled, ListItem, ListStyled } from './styled';
 export const List = () => {
   const dispatch = useDispatch();
   const countriesIds = useSelector(countryModel.selectIds);
+  const countriesIdsFiltered = useSelector(countryModel.selectFilteredIds);
   const { statusFetch, errorFetch } = useSelector(countryModel.selectFetchStatus);
+
+  const ids = countriesIdsFiltered.length ? countriesIdsFiltered : countriesIds;
 
   useEffect(() => {
     if (statusFetch === STATUS.IDLE_STATUS) {
@@ -28,7 +31,7 @@ export const List = () => {
         <>
           <CountryFilter />
           <ListStyled>
-            {countriesIds.map((countryId) => (
+            {ids.map((countryId) => (
               <ListItem key={countryId}>
                 <LinkStyled to={`/country/${countryId}`}>
                   <CountryCard countryId={countryId} />

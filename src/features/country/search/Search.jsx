@@ -1,26 +1,31 @@
 import { useTransition } from 'react';
 import { IoSearch } from 'react-icons/io5';
+import { useDispatch, useSelector } from 'react-redux';
 
-import { SearchStyled, SearchInner, SearchInput, SearchIcon } from './styled';
+import { countryModel } from '@entities';
+
+import { SearchStyled, SearchInner, SearchInput, SearchIcon, SearchLoading } from './styled';
 
 export const Search = () => {
+  const dispatch = useDispatch();
   const [isPending, startTransition] = useTransition();
+  const searchValue = useSelector(countryModel.selectSearchValue);
 
   const handleChange = (e) => {
     startTransition(() => {
-      // eslint-disable-next-line no-console
-      console.log(e.target.value);
+      dispatch(countryModel.setSearch(e.target.value.toLowerCase()));
     });
   };
 
   return (
     <SearchStyled>
-      {isPending && 'Loading ...'}
       <SearchInner>
+        {/* TODO Add spinner */}
+        {isPending && <SearchLoading>Loading...</SearchLoading>}
         <SearchIcon>
           <IoSearch size={16} />
         </SearchIcon>
-        <SearchInput type="search" autoComplete="off" onChange={handleChange} placeholder="Search for a country..." />
+        <SearchInput value={searchValue} type="search" autoComplete="off" onChange={handleChange} placeholder="Search for a country..." />
       </SearchInner>
     </SearchStyled>
   );

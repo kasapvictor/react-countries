@@ -14,8 +14,28 @@ const slice = createSlice({
   initialState: countryAdapter.getInitialState({
     errorFetch: null,
     statusFetch: STATUS.IDLE_STATUS,
+    search: '',
+    region: null,
+    filtered: [],
   }),
-  reducers: {},
+  reducers: {
+    setSearch: (state, { payload }) => {
+      state.search = payload;
+      state.filtered = [];
+
+      if (!payload) {
+        state.filtered = [];
+      }
+
+      if (payload) {
+        Object.values(state.entities).forEach((e) => {
+          if (e.name.common.toLowerCase().includes(payload) && !state.filtered[e.cca3]) {
+            state.filtered.push(e.cca3);
+          }
+        });
+      }
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchCountries.pending, (state) => {
@@ -33,4 +53,5 @@ const slice = createSlice({
   },
 });
 
+export const { setSearch } = slice.actions;
 export const reducer = slice.reducer;
