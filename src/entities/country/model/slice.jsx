@@ -2,7 +2,7 @@ import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
 
 import { STATUS } from '@shared';
 
-import { fetchCountries } from './actions';
+import { fetchCountries } from './thunks';
 
 export const countryAdapter = createEntityAdapter({
   selectId: (country) => country.cca3,

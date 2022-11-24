@@ -5,7 +5,6 @@ import { FONT_SIZE, FONT_WEIGHT } from '@shared';
 const commonStyles = ({ size, variant }) => ({
   fontSize: FONT_SIZE[size],
   fontWeight: FONT_WEIGHT[variant],
-  lineHeight: 1.5,
 });
 
 export const TextDiv = styled.div(({ size, variant }) => ({

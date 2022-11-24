@@ -32,7 +32,7 @@ export const CardMeta = styled.div({
   borderRadius: RADII.round,
   border: '1px solid',
   borderColor: COLOR.color14,
-  lineHeight: 1,
+  lineHeight: 0,
 });
 
 export const CardTitle = styled.div({

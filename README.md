@@ -79,6 +79,7 @@ pages/
  - [Emotion](https://emotion.sh)
  - [React Select](https://react-select.com/home)
  - [Countries API](https://restcountries.com)
+ - [Open Street Map](https://react-leaflet.js.org/docs/start-installation)
 
 
 ### Libs: 

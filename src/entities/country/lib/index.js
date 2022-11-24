@@ -1,0 +1,1 @@
+export { numberFormatted } from './numberFormatted';

@@ -1,15 +1,15 @@
-import { DetailsContent, DetailsTop } from '@pages/contents/country/details/styled';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import { countryModel, CountryDetails } from '@entities';
 import { Button, Container, STATUS, Text } from '@shared';
 
+import { DetailsContent, DetailsTop } from './styled';
+
 export const Details = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { countryId } = useParams();
   const { statusFetch, errorFetch } = useSelector(countryModel.selectFetchStatus);
 
   const handleClick = () => {
@@ -34,7 +34,7 @@ export const Details = () => {
 
         {statusFetch === STATUS.FAILED_STATUS && <Text tag="code">{errorFetch}</Text>}
 
-        {statusFetch === STATUS.SUCCESS_STATUS && <CountryDetails countryId={countryId} />}
+        {statusFetch === STATUS.SUCCESS_STATUS && <CountryDetails />}
       </DetailsContent>
     </Container>
   );
