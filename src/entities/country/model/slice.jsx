@@ -35,6 +35,22 @@ const slice = createSlice({
         });
       }
     },
+    setRegion: (state, { payload }) => {
+      state.region = payload;
+      state.filtered = [];
+
+      if (!payload) {
+        state.filtered = [];
+      }
+
+      if (payload) {
+        Object.values(state.entities).forEach((e) => {
+          if (e.region.toLowerCase().includes(payload) && !state.filtered[e.cca3]) {
+            state.filtered.push(e.cca3);
+          }
+        });
+      }
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -53,5 +69,5 @@ const slice = createSlice({
   },
 });
 
-export const { setSearch } = slice.actions;
+export const { setSearch, setRegion } = slice.actions;
 export const reducer = slice.reducer;

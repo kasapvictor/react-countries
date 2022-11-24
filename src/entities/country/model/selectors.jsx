@@ -13,6 +13,10 @@ export const selectSearchValue = createSelector([(state) => state.countries.sear
   return value;
 });
 
+export const selectRegionValue = createSelector([(state) => state.countries.region], (value) => {
+  return value;
+});
+
 export const selectFilteredIds = createSelector([(state) => state.countries.filtered], (filtered) => {
   return filtered;
 });

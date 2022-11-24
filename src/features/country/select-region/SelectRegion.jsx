@@ -1,22 +1,31 @@
+import { useDispatch, useSelector } from 'react-redux';
+
+import { countryModel } from '@entities';
+
 import { SelectStyled, selectStyles } from './styled';
 
 const options = [
-  { value: 'Africa', label: 'Africa' },
-  { value: 'America', label: 'America' },
-  { value: 'Asia', label: 'Asia' },
-  { value: 'Europe', label: 'Europe' },
-  { value: 'Oceania', label: 'Oceania' },
+  { value: 'africa', label: 'Africa' },
+  { value: 'america', label: 'America' },
+  { value: 'asia', label: 'Asia' },
+  { value: 'europe', label: 'Europe' },
+  { value: 'oceania', label: 'Oceania' },
 ];
 
 export const SelectRegion = () => {
+  const dispatch = useDispatch();
+  const regionValue = useSelector(countryModel.selectRegionValue);
+
   const handleSelect = (option) => {
-    // eslint-disable-next-line no-console
-    console.log('option', option);
+    const newValue = option?.value || null;
+    dispatch(countryModel.setRegion(newValue));
   };
+
+  const optionIndex = options.findIndex((option) => option.value === regionValue);
 
   return (
     <SelectStyled
-      // value={region}
+      defaultValue={options[optionIndex]}
       isClearable
       options={options}
       isSearchable={false}
