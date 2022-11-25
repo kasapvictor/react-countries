@@ -12,44 +12,46 @@ export const countryAdapter = createEntityAdapter({
 const slice = createSlice({
   name: 'country',
   initialState: countryAdapter.getInitialState({
-    errorFetch: null,
     statusFetch: STATUS.IDLE_STATUS,
+    errorFetch: null,
     search: '',
     region: null,
     filtered: [],
   }),
   reducers: {
     setSearch: (state, { payload }) => {
-      state.search = payload;
-      state.filtered = [];
+      state.search = payload.toLowerCase();
+      // state.filtered = [];
 
-      if (!payload) {
-        state.filtered = [];
-      }
-
-      if (payload) {
-        Object.values(state.entities).forEach((e) => {
-          if (e.name.common.toLowerCase().includes(payload) && !state.filtered[e.cca3]) {
-            state.filtered.push(e.cca3);
-          }
-        });
-      }
+      // if (!payload) {
+      //   state.filtered = [];
+      // }
+      //
+      // if (payload) {
+      //   Object.values(state.entities).forEach((e) => {
+      //     if (e.name.common.toLowerCase().includes(payload) && !state.filtered[e.cca3]) {
+      //       state.filtered.push(e.cca3);
+      //     }
+      //   });
+      // }
     },
     setRegion: (state, { payload }) => {
       state.region = payload;
-      state.filtered = [];
-
-      if (!payload) {
-        state.filtered = [];
-      }
-
-      if (payload) {
-        Object.values(state.entities).forEach((e) => {
-          if (e.region.toLowerCase().includes(payload) && !state.filtered[e.cca3]) {
-            state.filtered.push(e.cca3);
-          }
-        });
-      }
+      // const foo = state.filtered.filter((country) => state.entities[country].region.toLowerCase() === payload);
+      // console.log('FOO', foo);
+      // state.filtered = [];
+      //
+      // if (!payload) {
+      //   state.filtered = [];
+      // }
+      //
+      // if (payload) {
+      //   Object.values(state.entities).forEach((e) => {
+      //     if (e.region.toLowerCase().includes(payload) && !state.filtered[e.cca3]) {
+      //       state.filtered.push(e.cca3);
+      //     }
+      //   });
+      // }
     },
   },
   extraReducers: (builder) => {

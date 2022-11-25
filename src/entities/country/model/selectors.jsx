@@ -17,10 +17,34 @@ export const selectRegionValue = createSelector([(state) => state.countries.regi
   return value;
 });
 
-export const selectFilteredIds = createSelector([(state) => state.countries.filtered], (filtered) => {
-  return filtered;
-});
+export const selectFilteredIds = createSelector(
+  [
+    (state) => state.countries.ids,
+    (state) => state.countries.entities,
+    (state) => state.countries.search,
+    (state) => state.countries.region,
+  ],
+  (ids, entities, searchValue, regionValue) => {
+    const filteredIds = ids.reduce((accum, prev) => {
+      const country = entities[prev];
+      const countryName = country.name.common.toLowerCase();
 
-export const { selectById, selectIds } = countryAdapter.getSelectors((state) => {
+      if (countryName.includes(searchValue)) {
+        if (regionValue && country.region.toLowerCase() === regionValue) {
+          accum.push(prev);
+        }
+
+        if (!regionValue) {
+          accum.push(prev);
+        }
+      }
+      return accum;
+    }, []);
+
+    return filteredIds;
+  },
+);
+
+export const { selectById, selectIds, selectAll } = countryAdapter.getSelectors((state) => {
   return state.countries;
 });

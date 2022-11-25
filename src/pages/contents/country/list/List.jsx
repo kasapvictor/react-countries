@@ -7,13 +7,22 @@ import { CountryFilter } from '@widgets';
 
 import { LinkStyled, ListItem, ListStyled } from './styled';
 
+const ListItems = () => {
+  const filteredIds = useSelector(countryModel.selectFilteredIds);
+
+  return filteredIds.map((countryId) => (
+    <ListItem key={countryId}>
+      <LinkStyled to={`/country/${countryId}`}>
+        <CountryCard countryId={countryId} />
+      </LinkStyled>
+    </ListItem>
+  ));
+};
+
 export const List = () => {
   const dispatch = useDispatch();
-  const countriesIds = useSelector(countryModel.selectIds);
-  const countriesIdsFiltered = useSelector(countryModel.selectFilteredIds);
-  const { statusFetch, errorFetch } = useSelector(countryModel.selectFetchStatus);
 
-  const ids = countriesIdsFiltered.length ? countriesIdsFiltered : countriesIds;
+  const { statusFetch, errorFetch } = useSelector(countryModel.selectFetchStatus);
 
   useEffect(() => {
     if (statusFetch === STATUS.IDLE_STATUS) {
@@ -31,13 +40,7 @@ export const List = () => {
         <>
           <CountryFilter />
           <ListStyled>
-            {ids.map((countryId) => (
-              <ListItem key={countryId}>
-                <LinkStyled to={`/country/${countryId}`}>
-                  <CountryCard countryId={countryId} />
-                </LinkStyled>
-              </ListItem>
-            ))}
+            <ListItems />
           </ListStyled>
         </>
       )}

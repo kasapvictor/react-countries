@@ -6,7 +6,7 @@ import { SelectStyled, selectStyles } from './styled';
 
 const options = [
   { value: 'africa', label: 'Africa' },
-  { value: 'america', label: 'America' },
+  { value: 'americas', label: 'Americas' },
   { value: 'asia', label: 'Asia' },
   { value: 'europe', label: 'Europe' },
   { value: 'oceania', label: 'Oceania' },
