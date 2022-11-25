@@ -10,6 +10,14 @@ import { LinkStyled, ListItem, ListStyled } from './styled';
 const ListItems = () => {
   const filteredIds = useSelector(countryModel.selectFilteredIds);
 
+  if (!filteredIds.length) {
+    return (
+      <Text tag="code" size="medium">
+        Countries not found
+      </Text>
+    );
+  }
+
   return filteredIds.map((countryId) => (
     <ListItem key={countryId}>
       <LinkStyled to={`/country/${countryId}`}>
