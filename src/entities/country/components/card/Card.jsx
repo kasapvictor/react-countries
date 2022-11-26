@@ -1,3 +1,4 @@
+import { numberFormatted } from '@entities/country/lib';
 import { selectById } from '@entities/country/model';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
@@ -42,7 +43,7 @@ export const Card = ({ countryId }) => {
           <Text tag="span" variant="bold">
             Population:
           </Text>
-          <Text size="small">{countryById.population}</Text>
+          <Text size="small">{numberFormatted(countryById.population)}</Text>
         </CardContentRow>
       </CardContent>
     </CardStyled>
