@@ -3,6 +3,7 @@ import { IoSearch } from 'react-icons/io5';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { countryModel } from '@entities';
+import { Spinner } from '@shared';
 
 import { SearchStyled, SearchInner, SearchInput, SearchIcon, SearchLoading } from './styled';
 
@@ -20,8 +21,11 @@ export const Search = () => {
   return (
     <SearchStyled>
       <SearchInner>
-        {/* TODO Add spinner */}
-        {isPending && <SearchLoading>Loading...</SearchLoading>}
+        {isPending && (
+          <SearchLoading>
+            <Spinner />
+          </SearchLoading>
+        )}
         <SearchIcon>
           <IoSearch size={16} />
         </SearchIcon>

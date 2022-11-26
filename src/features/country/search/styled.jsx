@@ -41,7 +41,7 @@ export const SearchInput = styled.input({
 
 export const SearchLoading = styled.div({
   position: 'absolute',
-  right: -80,
+  right: -30,
   top: '50%',
   transform: 'translateY(-50%)',
 });
