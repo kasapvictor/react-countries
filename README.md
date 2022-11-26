@@ -80,6 +80,7 @@ pages/
  - [React Select](https://react-select.com/home)
  - [Countries API](https://restcountries.com)
  - [Open Street Map](https://react-leaflet.js.org/docs/start-installation)
+ - [Lazy (React)](https://reactjs.org/docs/code-splitting.html)
 
 
 ### Libs: 
