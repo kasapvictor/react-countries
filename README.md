@@ -1,5 +1,5 @@
 ## React Countries
-[Demo](https://kasapvictor.github.io)
+[Demo](https://kasapvictor.github.io/react-countries)
 
 ### FSD
 ![img_16.png](img_16.png)
