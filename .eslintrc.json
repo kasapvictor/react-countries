@@ -20,7 +20,7 @@
       { "type": "shared", "pattern": "shared/*" }
     ]
   },
-  "ignorePatterns": ["**/*.css", "**/*.scss", "**/*.svg", "**/*.md"],
+  "ignorePatterns": ["**/*.css", "**/*.scss", "**/*.svg", "**/*.md", "**/*.json"],
   "extends": [
     "plugin:react/recommended",
     "standard",

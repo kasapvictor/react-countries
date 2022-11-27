@@ -69,9 +69,14 @@ export const selectCountryById = createSelector([(state, countryId) => selectByI
     tld,
     timezones,
     borders,
+    cca3,
   } = country;
 
+  // eslint-disable-next-line no-console
+  console.log('COUNTRY', country);
+
   return {
+    cca3,
     countryName: ['Name', name.common],
     capitalName: ['Capital', capital ? capital[0] : ''],
     coords: ['Coords', Object.values(capitalInfo).length ? capitalInfo.latlng : latlng],

@@ -105,9 +105,10 @@ export const MapBox = styled.div({
   width: '100%',
   height: 600,
   position: 'relative',
-  paddingTop: SPACE.gutter,
+  marginTop: SPACE.gutter,
   borderRadius: RADII.xsmall,
   overflow: 'hidden',
+  boxShadow: SHADOW.default,
 
   '@media (max-width: 768px)': {
     height: 400,

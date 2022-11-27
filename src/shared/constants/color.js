@@ -17,6 +17,8 @@ export const COLOR = {
   color12: 'var(--color-theme12)',
   color13: 'var(--color5)',
   color14: 'var(--color13)',
+  color15: 'var(--color23)',
+
   text: {
     default: 'var(--color-theme1)',
   },
