@@ -82,5 +82,4 @@ pages/
  - [Open Street Map](https://react-leaflet.js.org/docs/start-installation)
  - [Lazy (React)](https://reactjs.org/docs/code-splitting.html)
 
-
-### Libs: 
+// TODO GITHUB PAGES
