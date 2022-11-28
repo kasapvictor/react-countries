@@ -7,7 +7,7 @@ import { Button, Container, STATUS, Text } from '@shared';
 
 import { DetailsContent, DetailsTop } from './styled';
 
-export const Details = () => {
+const Details = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { statusFetch, errorFetch } = useSelector(countryModel.selectFetchStatus);
@@ -39,3 +39,5 @@ export const Details = () => {
     </Container>
   );
 };
+
+export default Details;

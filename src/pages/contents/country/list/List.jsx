@@ -27,7 +27,7 @@ const ListItems = () => {
   ));
 };
 
-export const List = () => {
+const List = () => {
   const dispatch = useDispatch();
 
   const { statusFetch, errorFetch } = useSelector(countryModel.selectFetchStatus);
@@ -55,3 +55,5 @@ export const List = () => {
     </Container>
   );
 };
+
+export default List;
