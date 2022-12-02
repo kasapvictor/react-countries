@@ -29,7 +29,7 @@ export const Routing = () => {
             }
           />
           <Route
-            path="country/:countryId"
+            path="/:countryId"
             element={
               <Suspense
                 fallback={

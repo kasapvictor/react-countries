@@ -20,7 +20,7 @@ const ListItems = () => {
 
   return filteredIds.map((countryId) => (
     <ListItem key={countryId}>
-      <LinkStyled to={`/country/${countryId}`}>
+      <LinkStyled to={`/${countryId}`}>
         <CountryCard countryId={countryId} />
       </LinkStyled>
     </ListItem>

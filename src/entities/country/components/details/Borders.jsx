@@ -11,7 +11,7 @@ export const Borders = ({ countryId }) => {
   const countryById = useSelector((state) => selectById(state, countryId));
 
   return (
-    <BorderButton to={`/country/${countryId}`}>
+    <BorderButton to={`/${countryId}`}>
       <Text size="medium">{countryById.name.common}</Text>
     </BorderButton>
   );
