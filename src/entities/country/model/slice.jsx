@@ -21,37 +21,9 @@ const slice = createSlice({
   reducers: {
     setSearch: (state, { payload }) => {
       state.search = payload.toLowerCase();
-      // state.filtered = [];
-
-      // if (!payload) {
-      //   state.filtered = [];
-      // }
-      //
-      // if (payload) {
-      //   Object.values(state.entities).forEach((e) => {
-      //     if (e.name.common.toLowerCase().includes(payload) && !state.filtered[e.cca3]) {
-      //       state.filtered.push(e.cca3);
-      //     }
-      //   });
-      // }
     },
     setRegion: (state, { payload }) => {
       state.region = payload;
-      // const foo = state.filtered.filter((country) => state.entities[country].region.toLowerCase() === payload);
-      // console.log('FOO', foo);
-      // state.filtered = [];
-      //
-      // if (!payload) {
-      //   state.filtered = [];
-      // }
-      //
-      // if (payload) {
-      //   Object.values(state.entities).forEach((e) => {
-      //     if (e.region.toLowerCase().includes(payload) && !state.filtered[e.cca3]) {
-      //       state.filtered.push(e.cca3);
-      //     }
-      //   });
-      // }
     },
   },
   extraReducers: (builder) => {
