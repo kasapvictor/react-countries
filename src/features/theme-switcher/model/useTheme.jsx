@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
-import { THEME } from '../constants';
+import { MODE } from '../constants';
 
 export const useTheme = () => {
-  const [theme, setTheme] = useState(THEME.LIGHT);
+  const [theme, setTheme] = useState(MODE.LIGHT);
 
   const handleTheme = () => {
-    setTheme(theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT);
+    setTheme(theme === MODE.LIGHT ? MODE.DARK : MODE.LIGHT);
   };
 
   useEffect(() => {
