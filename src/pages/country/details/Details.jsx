@@ -8,7 +8,7 @@ import { Button, STATUS, Text } from '@shared';
 
 import { DetailsContent, DetailsTop } from './styled';
 
-export const Details = () => {
+const useDetails = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { statusFetch, errorFetch } = useSelector(countryModel.selectFetchStatus);
@@ -22,6 +22,11 @@ export const Details = () => {
       dispatch(countryModel.fetchCountries());
     }
   }, []);
+
+  return { handleClick, statusFetch, errorFetch };
+};
+export const Details = () => {
+  const { handleClick, statusFetch, errorFetch } = useDetails();
 
   return (
     <BaseTemplate>

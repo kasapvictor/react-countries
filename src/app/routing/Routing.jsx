@@ -3,9 +3,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 
 import { Container, Text } from '@shared';
 
-// import { CountryList, CountryDetails } from '@pages';
-// const {CountryList} = lazy(() => import('@pages'));
-// const {CountryDetails} = lazy(() => import('@pages'));
 const CountryList = lazy(() => import('@pages/country/list'));
 const CountryDetails = lazy(() => import('@pages/country/details'));
 

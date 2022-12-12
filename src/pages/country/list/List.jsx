@@ -28,7 +28,7 @@ const ListItems = () => {
   ));
 };
 
-export const List = () => {
+const useList = () => {
   const dispatch = useDispatch();
 
   const { statusFetch, errorFetch } = useSelector(countryModel.selectFetchStatus);
@@ -38,6 +38,11 @@ export const List = () => {
       dispatch(countryModel.fetchCountries());
     }
   }, []);
+
+  return { statusFetch, errorFetch };
+};
+export const List = () => {
+  const { statusFetch, errorFetch } = useList();
 
   return (
     <BaseTemplate>
