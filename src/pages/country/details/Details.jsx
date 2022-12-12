@@ -1,9 +1,10 @@
+import { BaseTemplate } from '@widgets/templates';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 import { countryModel, CountryDetails } from '@entities';
-import { Button, Container, STATUS, Text } from '@shared';
+import { Button, STATUS, Text } from '@shared';
 
 import { DetailsContent, DetailsTop } from './styled';
 
@@ -23,7 +24,7 @@ export const Details = () => {
   }, []);
 
   return (
-    <Container>
+    <BaseTemplate>
       <DetailsTop>
         <Button variant="light" onClick={handleClick}>
           Back
@@ -36,6 +37,6 @@ export const Details = () => {
 
         {statusFetch === STATUS.SUCCESS_STATUS && <CountryDetails />}
       </DetailsContent>
-    </Container>
+    </BaseTemplate>
   );
 };

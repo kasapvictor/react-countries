@@ -1,8 +1,9 @@
+import { BaseTemplate } from '@widgets/templates';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { CountryCard, countryModel } from '@entities';
-import { Container, STATUS, Text } from '@shared';
+import { STATUS, Text } from '@shared';
 import { CountryFilter } from '@widgets';
 
 import { LinkStyled, ListItem, ListStyled } from './styled';
@@ -39,7 +40,7 @@ export const List = () => {
   }, []);
 
   return (
-    <Container>
+    <BaseTemplate>
       {statusFetch === STATUS.LOADING_STATUS && <Text tag="code">Loading ...</Text>}
 
       {statusFetch === STATUS.FAILED_STATUS && <Text tag="code">{errorFetch}</Text>}
@@ -52,6 +53,6 @@ export const List = () => {
           </ListStyled>
         </>
       )}
-    </Container>
+    </BaseTemplate>
   );
 };
