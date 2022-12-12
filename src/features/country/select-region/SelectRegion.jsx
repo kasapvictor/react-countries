@@ -12,7 +12,7 @@ const options = [
   { value: 'oceania', label: 'Oceania' },
 ];
 
-export const SelectRegion = () => {
+const useSelectRegion = () => {
   const dispatch = useDispatch();
   const regionValue = useSelector(countryModel.selectRegionValue);
 
@@ -22,6 +22,12 @@ export const SelectRegion = () => {
   };
 
   const optionIndex = options.findIndex((option) => option.value === regionValue);
+
+  return { handleSelect, optionIndex };
+};
+
+export const SelectRegion = () => {
+  const { handleSelect, optionIndex } = useSelectRegion();
 
   return (
     <SelectStyled

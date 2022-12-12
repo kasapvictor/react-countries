@@ -7,7 +7,7 @@ import { Spinner } from '@shared';
 
 import { SearchStyled, SearchInner, SearchInput, SearchIcon, SearchLoading } from './styled';
 
-export const Search = () => {
+const useSearch = () => {
   const dispatch = useDispatch();
   const [isPending, startTransition] = useTransition();
   const searchValue = useSelector(countryModel.selectSearchValue);
@@ -17,6 +17,11 @@ export const Search = () => {
       dispatch(countryModel.setSearch(e.target.value.toLowerCase()));
     });
   };
+
+  return { isPending, searchValue, handleChange };
+};
+export const Search = () => {
+  const { isPending, searchValue, handleChange } = useSearch();
 
   return (
     <SearchStyled>
